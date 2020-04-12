@@ -4,7 +4,7 @@ import time
 # This will help navigate back to start
 def ynrspble():
     print("Would you like to go back to start? Y/N")
-    yorn = input("c:// ")
+    yorn = input("")
     if yorn.lower() == "y":
         problemlist()
     else:
@@ -23,8 +23,7 @@ def problemlist():
     print("[6] Two step equations")
     print("[7] Slope To standard form")
     print("[8] Transformations")
-    l = ['1', '2', '3', '4', '5', '6', '7', '8']
-    cmd = c.g(l)
+    cmd = input()
     if cmd == '1':
         procred()
     elif cmd == '2':
