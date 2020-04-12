@@ -1,6 +1,3 @@
-import cmd as c
-import time
-
 # This will help navigate back to start
 def ynrspble():
     print("Would you like to go back to start? Y/N")
@@ -296,6 +293,6 @@ def refleactions():
             ynrspble()
 
 if __name__ == "__main__":
-    varversionofsolver = "1.2a"
+    varversionofsolver = "1.4a"
     print("Seiling 8th grade math solver v " + varversionofsolver)
     problemlist()
