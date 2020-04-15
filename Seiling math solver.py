@@ -1,3 +1,4 @@
+import time
 # This will help navigate back to start
 def ynrspble():
     print("Would you like to go back to start? Y/N")
@@ -94,8 +95,7 @@ def Xtab():
 def PreAl():
     print("[1] Addition")
     print("[2] Subtraction")
-    l = ['1', '2']
-    cmd = c.g(l)
+    cmd = input()
     if cmd == '1':
         Add()
     elif cmd == '2':
@@ -293,6 +293,6 @@ def refleactions():
             ynrspble()
 
 if __name__ == "__main__":
-    varversionofsolver = "1.4a"
+    varversionofsolver = "1.5a"
     print("Seiling 8th grade math solver v " + varversionofsolver)
     problemlist()
