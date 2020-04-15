@@ -1,3 +1,4 @@
+
 import time
 # This will help navigate back to start
 def ynrspble():
@@ -308,7 +309,6 @@ def fraction_to_decimal():
         varprint = str(varcal1) + '0'
     print('Your awnswer is ' + varprint)
     ynrspble()
-
 
 if __name__ == "__main__":
     varversionofsolver = "1.6a"
