@@ -21,6 +21,7 @@ def problemlist():
     print("[6] Two step equations")
     print("[7] Slope To standard form")
     print("[8] Transformations")
+    print('[9] Fraction to decimal')
     cmd = input()
     if cmd == '1':
         procred()
@@ -38,6 +39,8 @@ def problemlist():
         SS()
     elif cmd == '8':
         transformations()
+    elif cmd == '9':
+        fraction_to_decimal()
 
 # Programing credits
 def procred():
@@ -292,7 +295,22 @@ def refleactions():
             print("The answer is: (" + calstry + ", " + calstrx + ")")
             ynrspble()
 
+#Converts Fractions to decimal
+def fraction_to_decimal():
+    print('Fracton to decimal converter')
+    print('Input the numerator in interger form (Top part of the fraction)')
+    varnumfractodec = int(input())
+    print('input demonimator in Intager form (Bottom of the fraction)')
+    vardemfractonecdem = int(input())
+    varcal1 = varnumfractodec / vardemfractonecdem
+    varprint = str(varcal1)
+    if varcal1 < 1:
+        varprint = str(varcal1) + '0'
+    print('Your awnswer is ' + varprint)
+    ynrspble()
+
+
 if __name__ == "__main__":
-    varversionofsolver = "1.5a"
+    varversionofsolver = "1.6a"
     print("Seiling 8th grade math solver v " + varversionofsolver)
     problemlist()
