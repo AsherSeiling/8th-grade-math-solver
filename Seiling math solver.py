@@ -24,6 +24,7 @@ def problemlist():
     print("[8] Transformations")
     print('[9] Fraction to decimal')
     print('[10] Roots')
+    print('[11] Area and Volume')
     print('Select what you would like to use')
     cmd = input()
     if cmd == '1':
@@ -46,6 +47,8 @@ def problemlist():
         fraction_to_decimal()
     elif cmd == '10':
         nav_for_roots()
+    elif cmd == '11':
+        area_and_volume_nav()
 
 # Programing credits
 def procred():
@@ -355,7 +358,149 @@ def nav_for_roots():
     elif varselectrootnav == '4':
         ynrspble()
 
+# Navigaton volume and area
+def area_and_volume_nav():
+    print('[1] Area')
+    print('[2] Volume')
+    print('[3] Exit')
+    var_aavn = input()
+    if var_aavn == '1':
+        nav_area()
+    elif var_aavn == '2':
+        nav_volume()
+    elif var_aavn == '3':
+        ynrspble()
+
+# Navigaton Volume
+def nav_volume():
+    print('[1] Cones')
+    print('[2] Cubes')
+    print('[3] Spheres')
+    print('[4] Cylinder')
+    print('[5] Triangular prism')
+    var_navv = input()
+    if var_navv == '1':
+        volume_of_cones()
+    elif var_navv == '2':
+        volume_of_cubes()
+    elif var_navv == '3':
+        volume_of_spheres
+    elif var_navv == '4':
+        volume_of_cylienders()
+    elif var_navv == '5':
+        volume_of_tri_prism()
+
+
+# Navigaton Area
+def nav_area():
+    print('[1] Area of a circle')
+    print('[2] Area of a rectangle(or cube)')
+    print('[3] Area of a triangle')
+    areainputnav = input()
+    if areainputnav == '1':
+        area_of_a_circle()
+    elif areainputnav == '2':
+        area_of_square()
+    elif areainputnav == '3':
+        area_of_triangle()
+
+# Volume of cones
+def volume_of_cones():
+    print('Input unit')
+    varconevoluni = input()
+    print('Input radius')
+    varinradcone = float(input())
+    print('Input hight')
+    varnhighcon = float(input())
+    varcal1 = (((varinradcone ** 2) * pi) * varnhighcon) * 1/3
+    print('Your awnswer is ' + str(varcal1) + ' Cubic ' + varconevoluni)
+    ynrspble()
+
+# Volume of Cyinders
+def volume_of_cylienders():
+    print('Input unit')
+    var_ciluninit = input()
+    print('Input radius')
+    var_radcil = float(input())
+    print('Input hight')
+    var_highcil = float(input())
+    varcalcil1 = ((((var_radcil ** 2) * pi)) * var_highcil)
+    print('Your awnswer is ' + str(varcalcil1) + ' Cubic ' + str(var_ciluninit))
+    ynrspble()
+
+# Volume of cubes
+def volume_of_cubes():
+    print('Input unit')
+    varcubeunit = input()
+    print('Input legth of side 1')
+    varcubeside1leg = float(input())
+    print('Input legth of side 2')
+    varcubeside2leg = float(input())
+    print('Input hight')
+    varcubehight = float(input())
+    varcalcubevol1 = (varcubeside1leg* varcubeside2leg) * varcubehight
+    print('Your awnswer is ' + str(varcalcubevol1) + ' Cubic ' + str(varcubeunit))
+    ynrspble()
+# Volume of spheres
+def volume_of_spheres():
+    print('Input unit')
+    var_sphereunitinput = input()
+    print('Input radius')
+    var_radsphereinput = float(input())
+    var_spherecal1 = (((var_radsphereinput ** 3) * pi) * 4/3)
+    print('Your Answer is ' + str(var_spherecal1) + ' Cubic ' + var_sphereunitinput)
+    ynrspble()
+
+#Volume of a triangular prism
+def volume_of_tri_prism():
+    print('Input unit')
+    var_unitri = input()
+    print('Input legth')
+    var_trilegth = float(input())
+    print('Input hight of triangle')
+    var_tritrihigh = float(input())
+    print('Input Triangle base')
+    var_tritribase = float(input())
+    var_caltrivol1 = ((var_tritrihigh * var_tritribase) * var_trilegth) * 1/2
+    print('Your answer is ' + str(var_caltrivol1) + ' cubic ' + var_unitri)
+    ynrspble()
+
+# Area of a square
+def area_of_square():
+    print('Input unit')
+    var_areasquareuni = input()
+    print('Input Hight of square')
+    var_highsquarearea = float(input())
+    print('Input Width of square')
+    var_squarewidth = float(input())
+    var_squareareacal1 = var_highsquarearea * var_squarewidth
+    print('Your awnswer is ' + str(var_squareareacal1) + ' ' + var_areasquareuni + ' Squared')
+    ynrspble()
+
+# Area of a triangle calculator
+def area_of_triangle():
+    print('Input unit')
+    var_unitareatri = input()
+    print('Input triangle hight')
+    var_triareahigh = float(input())
+    print('Input triangle base')
+    var_tribasearea = float(input())
+    var_caltriarea1 = (var_triareahigh * var_tribasearea) * 1/2
+    print('Your answer is ' + str(var_caltriarea1) +  ' ' + var_unitareatri + ' squared')
+    ynrspble()
+
+# area of a circle
+def area_of_a_circle():
+    print('Input unit')
+    var_unicirin = input()
+    print('Input Radius')
+    var_radcirin = float(input())
+    var_calcirc1 = (var_radcirin ** 2) * pi
+    print('The answer is ' + str(var_calcirc1) + ' ' + var_unicirin + ' squared')
+    ynrspble()
+
 if __name__ == "__main__":
-    varversionofsolver = "1.7a"
+    varversionofsolver = "1.8a"
+    pi = 3.1415
     print("Seiling 8th grade math solver v " + varversionofsolver)
     problemlist()
