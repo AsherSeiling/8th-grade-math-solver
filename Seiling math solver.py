@@ -23,6 +23,8 @@ def problemlist():
     print("[7] Slope To standard form")
     print("[8] Transformations")
     print('[9] Fraction to decimal')
+    print('[10] Roots')
+    print('Select what you would like to use')
     cmd = input()
     if cmd == '1':
         procred()
@@ -42,6 +44,8 @@ def problemlist():
         transformations()
     elif cmd == '9':
         fraction_to_decimal()
+    elif cmd == '10':
+        nav_for_roots()
 
 # Programing credits
 def procred():
@@ -310,7 +314,48 @@ def fraction_to_decimal():
     print('Your awnswer is ' + varprint)
     ynrspble()
 
+#Square roots
+def square_roots():
+    print('Input number you want to square')
+    varnumtosquare = float(input())
+    varsquarerootcal1 = varnumtosquare ** 2
+    print('your awnswer is ' + str(varsquarerootcal1))
+    ynrspble()
+
+#cube roots
+def cube_roots():
+    print('Input number you want to cube')
+    varnumtocube = float(input())
+    varcuberootcal1 = varnumtocube ** 3
+    print('your awnswer is ' + str(varcuberootcal1))
+    ynrspble()
+
+#Anything else to power
+def to_the_power():
+    print('Input base number')
+    varbasenumber = float(input())
+    print('Input what woy would like to multiply it by a power to')
+    vartoapower = float(input())
+    varcaltoapower1 = varbasenumber ** vartoapower
+    print('your awnswer is ' + str(varcaltoapower1))
+
+ #navigaton for roots
+def nav_for_roots():
+    print('[1] Square roots')
+    print('[2] Cube roots')
+    print('[3] Other')
+    print('[4] Back to start')
+    varselectrootnav = input()
+    if varselectrootnav == '1':
+        square_roots()
+    elif varselectrootnav == '2':
+        cube_roots()
+    elif varselectrootnav == '3':
+        to_the_power()
+    elif varselectrootnav == '4':
+        ynrspble()
+
 if __name__ == "__main__":
-    varversionofsolver = "1.6a"
+    varversionofsolver = "1.7a"
     print("Seiling 8th grade math solver v " + varversionofsolver)
     problemlist()
