@@ -10,7 +10,8 @@ def ynrspble():
         if yorn.lower() == "n":
             print("Thank you for using Seiling math solver v" + varversionofsolver)
         else:
-            print("Syntax error")
+            print("Syntax error please try again")
+            ynrspble()
 
 # what this can calculate
 def problemlist():
