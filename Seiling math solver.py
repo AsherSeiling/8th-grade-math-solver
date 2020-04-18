@@ -1,4 +1,5 @@
 pi = 3.1415
+import math
 import time
 # This will help navigate back to start
 def ynrspble():
@@ -26,6 +27,7 @@ def problemlist():
     print('[9] Fraction to decimal')
     print('[10] Roots')
     print('[11] Area and Volume')
+    print('[12] Pythagorean Theorem')
     print('Select what you would like to use')
     cmd = input()
     if cmd == '1':
@@ -50,6 +52,8 @@ def problemlist():
         nav_for_roots()
     elif cmd == '11':
         area_and_volume_nav()
+    elif cmd == '12':
+        pythagorean_theorem()
 
 # Programing credits
 def procred():
@@ -500,8 +504,18 @@ def area_of_a_circle():
     print('The answer is ' + str(var_calcirc1) + ' ' + var_unicirin + ' squared')
     ynrspble()
 
+# Calculates Pythagorean Theorem
+def pythagorean_theorem():
+    print('Input A')
+    var_apainput = float(input())
+    print('Input B')
+    var_bpainput = float(input())
+    var_calpa1 = (var_apainput ** 2) + (var_bpainput ** 2)
+    var_rootpa = math.sqrt(var_calpa1)
+    print('Your awnswer is ' + str(var_rootpa))
+    ynrspble()
+
 if __name__ == "__main__":
-    varversionofsolver = "1.8a"
-    pi = 3.1415
+    varversionofsolver = "1.9a"
     print("Seiling 8th grade math solver v " + varversionofsolver)
     problemlist()
