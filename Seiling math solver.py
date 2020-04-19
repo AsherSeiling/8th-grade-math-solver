@@ -57,13 +57,7 @@ def problemlist():
 
 # Programing credits
 def procred():
-    print("Programmers")
-    print(" ")
-    print("_____________________________________")
-    print("|Math functions | Systems interface |")
-    print("|---------------|-------------------|")
-    print("| Asher Seiling | Ian Kelley        |")
-    print("|_______________|___________________|")
+    print('© 2020 Seiling Enterprises')
     ynrspble()
 
 #Y=mx+B
@@ -517,5 +511,5 @@ def pythagorean_theorem():
 
 if __name__ == "__main__":
     varversionofsolver = "1.0 Beta"
-    print("Seiling 8th grade math solver v " + varversionofsolver)
+    print("Seiling Enterprises 8th grade math solver v " + varversionofsolver)
     problemlist()
