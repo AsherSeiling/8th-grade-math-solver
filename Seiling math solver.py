@@ -17,7 +17,7 @@ def ynrspble():
 # what this can calculate
 def problemlist():
     print("[1] Programing credits")
-    print("[2] y=mx+b")
+    print("[2] Y = MX + B")
     print("[3] Slope")
     print("[4] y intercept from table")
     print("[5] x intercept from table")
@@ -516,6 +516,6 @@ def pythagorean_theorem():
     ynrspble()
 
 if __name__ == "__main__":
-    varversionofsolver = "1.9a"
+    varversionofsolver = "1.0 Beta"
     print("Seiling 8th grade math solver v " + varversionofsolver)
     problemlist()
