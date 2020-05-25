@@ -4,7 +4,7 @@ import time
 # This will help navigate back to start
 def ynrspble():
     print("Would you like to go back to start? Y/N")
-    yorn = input("")
+    yorn = input()
     if yorn.lower() == "y":
         problemlist()
     else:
@@ -66,8 +66,7 @@ def yemxpb():
     ymxm = float(input("Input M/slope decimal please "))
     ymxx = float(input("Input X "))
     ymxbc = (ymxm * ymxx) + ymxb
-    ymxbs = str(ymxbc)
-    print("The answer is " + ymxbs)
+    print("The answer is " + str(ymxbc))
     ynrspble()
 
 # slope
@@ -82,24 +81,23 @@ def slope():
     print(s3)
     ynrspble()
 
-# y from a table - doesn't work
+# y from a table
 def Ytab():
     tbx = float(input("Input X "))
     tbs = float(input("Input slope (Decimal please) "))
     yft1 = tbx * tbs
     yft2 = tbx - yft1
-    yft2s = str(yft2)
-    print("y-int= " + yft2s)
+    print("y-intercept= " + str(yft2))
     ynrspble()
-#x from a table - doesn't work
+
+#x from a table
 
 def Xtab():
     tby = float(input("Input y "))
-    tbs = float(input("Input slope "))
+    tbs = float(input("Input slope (Decimal)"))
     xft1 = tby * tbs
     xft2 = xft1 - tby
-    xft2s = str(xft2)
-    print("x-int= " + xft2s)
+    print("x-intercept= " + str(xft2))
     ynrspble()
 # this helps decide what pre al function to use
 def PreAl():
